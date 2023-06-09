@@ -48,5 +48,5 @@ function numberReplacer(numero) {
     stringArray.push(num.toString());
   });
   return stringArray;
-  
+
 }

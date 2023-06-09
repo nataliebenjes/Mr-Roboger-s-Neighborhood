@@ -8,7 +8,15 @@ Test: "It should return an array of strings"
 Code: numberReplacer(5);
 Expected Output: ["0", "1", "2", "3", "4", "5"]
 
-Test: "It should run through containsThree, containsTwo, and containsOne
+Test: "It should run through containsThree, containsTwo, 
+and containsOne"
+code: numberReplacer(13)
+Expected Output: ['0',      '1',  'Bloop!',
+  '3',      '4',  '5',
+  '6',      '7',  '8',
+  '9',      '10', '11',
+  'Bloop!', '13'
+]
 
 Decribe: containsThree()
 
