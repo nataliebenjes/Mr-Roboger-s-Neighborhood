@@ -1,3 +1,40 @@
+# _Mr-Roboger-s-Neighborhood_
+
+#### By _**Natalie Benjes**_
+
+#### _An application that generates a different string of text based off of what number the user enters_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _JavaScript_
+
+## GitHub Pages
+[GitHub Page] (https://nataliebenjes.github.io/language-suggester/)
+
+## Description
+
+_This website takes an input from the user and returns a list of values from 0 to the user's inputted number with the following substitutions made within the returned list:
+All digits containing a 3 are replaced with the string "Won't you be my neighbor?".
+All digits containing a 2 are replaced with the string "Bloop".
+Alldigits containing a 1 are replaced with the string "Beep"
+If the user inputs not a number, an error message appears._
+
+## Setup/Installation Requirements
+
+* _Download the repository "Mr-Roboger-s-Neighborhood
+" to your device._
+* _Open index.html_
+
+
+## Known Bugs
+
+* _No known bugs_
+_If issues with the code are found please contact Natalie Benjes. GitHub username is nataliebenjes_
+
+## Test Driven Development
+
 Describe: numberReplacer()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
@@ -59,3 +96,9 @@ Code:containsOne([
   '8',  '9', '10', 'Bleep!',
   'Bleep!'
 ])
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT).
+Copyright (c) _2023_Natalie Benjes_
+

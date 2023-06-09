@@ -3,17 +3,14 @@
 function handleFormSubmission(event) {
   event.preventDefault();
   const numberInput = parseInt(document.getElementById("numberInput").value);
-  console.log(numberInput);
   if (isNaN(numberInput)) {
     errorMessage = "That is not a number. Please enter a number: no text :]"
     } else {
     errorMessage = ""
+    const mrRoboOutput = numberReplacer(numberInput);
+    document.getElementById("results").innerText = mrRoboOutput;
   }
   document.getElementById("error-message").innerText = errorMessage
-  const mrRoboOutput = numberReplacer(numberInput);
-  console.log(mrRoboOutput);
-  document.getElementById("results").innerText = mrRoboOutput;
-
 }
 
 
