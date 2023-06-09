@@ -3,16 +3,23 @@ function handleFormSubmission(event) {
   event.preventDefault();
   const numberInput = parseInt(document.getElementById("numberInput").value);
   console.log(numberInput);
-  if (numberInput != Number) {
-    document.getElementById("error-message").innerText = "That is not a number. Please enter a number: no text :]"
+  if (isNaN(numberInput)) {
+    errorMessage = "That is not a number. Please enter a number: no text :]"
+    } else {
+    errorMessage = ""
   }
+  document.getElementById("error-message").innerText = errorMessage
   const mrRoboOutput = numberReplacer(numberInput);
   console.log(mrRoboOutput);
   document.getElementById("results").innerText = mrRoboOutput;
+
 }
+
 
 window.addEventListener("load", function() {
   document.querySelector("form#robo-form").addEventListener("submit", handleFormSubmission);
+
+
 });
 
 // Buisness Logic
@@ -71,4 +78,3 @@ function numberReplacer(numero) {
   const resultThree = containsOne(resultTwo);
   return resultThree;
 }
-
