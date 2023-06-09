@@ -47,6 +47,9 @@ function numberReplacer(numero) {
   numberArray.forEach(function(num) {
     stringArray.push(num.toString());
   });
-  return stringArray;
-
+  const resultOne = containsThree(stringArray);
+  const resultTwo = containsTwo(resultOne);
+  const resultThree = containsOne(resultTwo);
+  return resultThree;
+}
 }

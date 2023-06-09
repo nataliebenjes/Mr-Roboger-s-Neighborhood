@@ -11,11 +11,21 @@ Expected Output: ["0", "1", "2", "3", "4", "5"]
 Test: "It should run through containsThree, containsTwo, 
 and containsOne"
 code: numberReplacer(13)
-Expected Output: ['0',      '1',  'Bloop!',
-  '3',      '4',  '5',
-  '6',      '7',  '8',
-  '9',      '10', '11',
-  'Bloop!', '13'
+Expected Output: [
+  '0',
+  'Bleep!',
+  'Bloop!',
+  "Won't you be my neighbor",
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  'Bleep!',
+  'Bleep!',
+  'Bloop!',
+  "Won't you be my neighbor"
 ]
 
 Decribe: containsThree()
