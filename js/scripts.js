@@ -1,4 +1,5 @@
 // UI Logic
+
 function handleFormSubmission(event) {
   event.preventDefault();
   const numberInput = parseInt(document.getElementById("numberInput").value);
@@ -76,5 +77,8 @@ function numberReplacer(numero) {
   const resultOne = containsThree(stringArray);
   const resultTwo = containsTwo(resultOne);
   const resultThree = containsOne(resultTwo);
-  return resultThree;
+  const endString = resultThree.toString();
+
+  const stringWithoutCommas = endString.replace(/,/g, " ");
+  return stringWithoutCommas;
 }
