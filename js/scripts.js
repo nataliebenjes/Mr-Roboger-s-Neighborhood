@@ -1,3 +1,18 @@
+// UI Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const numberInput = parseInt(document.getElementById("numberInput"));
+  const word = document.getElementById("word").value;
+  const mrRoboOutput = numberReplacer(numberInput);
+  document.getElementById("results").innerText = mrRoboOutput
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("form#robo-form").addEventListener("submit", handleFormSubmission);
+});
+
+// Buisness Logic
+
 function containsThree(array) {
   xArray = [];
   array.forEach(function(num) {
@@ -39,6 +54,9 @@ function containsOne(array) {
 
 function numberReplacer(numero) {
   let endNumber = numero;
+  if (endNumber != Number) {
+    return console.log("user needs to enter a number")
+  }
   let numberArray = [];
   for (let i = 0; i <= endNumber; i +=1) {
     numberArray.push(i);
@@ -52,4 +70,4 @@ function numberReplacer(numero) {
   const resultThree = containsOne(resultTwo);
   return resultThree;
 }
-}
+
