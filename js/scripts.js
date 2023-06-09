@@ -1,10 +1,14 @@
 // UI Logic
 function handleFormSubmission(event) {
   event.preventDefault();
-  const numberInput = parseInt(document.getElementById("numberInput"));
-  const word = document.getElementById("word").value;
+  const numberInput = parseInt(document.getElementById("numberInput").value);
+  console.log(numberInput);
+  if (numberInput != Number) {
+    document.getElementById("error-message").innerText = "That is not a number. Please enter a number: no text :]"
+  }
   const mrRoboOutput = numberReplacer(numberInput);
-  document.getElementById("results").innerText = mrRoboOutput
+  console.log(mrRoboOutput);
+  document.getElementById("results").innerText = mrRoboOutput;
 }
 
 window.addEventListener("load", function() {
@@ -54,9 +58,6 @@ function containsOne(array) {
 
 function numberReplacer(numero) {
   let endNumber = numero;
-  if (endNumber != Number) {
-    return console.log("user needs to enter a number")
-  }
   let numberArray = [];
   for (let i = 0; i <= endNumber; i +=1) {
     numberArray.push(i);
