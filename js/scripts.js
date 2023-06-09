@@ -1,4 +1,14 @@
-function containsThree()
+function containsThree(array) {
+
+  array.forEach(function(num) {
+    //see if num includes a "3"
+    if ("3".includes(num)) {
+      array.push("Won't you be my neighbor")
+    }
+  })
+  return array;
+}
+
 
 function numberReplacer(numero) {
   let endNumber = numero;
