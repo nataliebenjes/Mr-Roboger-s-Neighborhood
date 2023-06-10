@@ -11,7 +11,7 @@
 * _JavaScript_
 
 ## GitHub Pages
-[GitHub Page] (https://nataliebenjes.github.io/language-suggester/)
+[GitHub Page] (https://nataliebenjes.github.io/Mr-Roboger-s-Neighborhood/)
 
 ## Description
 
